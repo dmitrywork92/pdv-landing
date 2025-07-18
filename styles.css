@@ -277,11 +277,87 @@ p {
 /* Portfolio */
 
 .portfolio-section {
+  padding: 80px 0;
+  background: #f9f9f9;
+}
+
+.portfolio-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.portfolio-section h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.portfolio-section .subtitle {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.portfolio-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.portfolio-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  overflow: hidden;
+  flex: 1 1 calc(33.333% - 20px);
   display: flex;
   flex-direction: column;
 }
 
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: (3, 1fr);
+.portfolio-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.portfolio-content {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.portfolio-content h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #222;
+}
+
+.portfolio-content p {
+  flex: 1;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.portfolio-content .price {
+  font-weight: bold;
+  color: #222;
+  position: relative;
+}
+
+.portfolio-content .price span {
+  color: #189e42;
+  font-weight: 500;
+}
+
+.portfolio-content .price::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #ffcd05;
+  margin-bottom: 4px;
 }
