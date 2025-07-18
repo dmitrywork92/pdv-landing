@@ -148,3 +148,140 @@ p {
   color: #666;
   font-size: 14px;
 }
+
+/* Poll Section */
+
+.poll-section {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.poll-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.poll-section .description {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.poll-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.poll-option {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.poll-option input {
+  margin-right: 16px;
+  margin-top: 5px;
+}
+
+.poll-option .content strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.poll-option.selected {
+  border-color: #1ba57a;
+  box-shadow: 0 0 0 3px rgba(27,165,122,0.2);
+}
+
+.vote-stats {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #444;
+}
+
+.vote-stats strong {
+  font-size: 28px;
+  color: #111;
+  margin: 0 5px;
+}
+
+/* Benefit */
+
+.benefits-section {
+  font-family: sans-serif;
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.benefits-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow: hidden;
+}
+
+.benefits-header .text {
+  background-color: #005c54;
+  color: white;
+  padding: 40px;
+  flex: 1;
+}
+
+.benefits-header h2 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.benefits-header .image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.benefits-header .image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  padding: 40px 0;
+}
+
+.benefit-item {
+  background-image: url(./assets/img/ellipse.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 92px;
+
+  background-color: #fff;
+  text-align: center;
+}
+
+.benefit-item .icon {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+/* Portfolio */
+
+.portfolio-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: (3, 1fr);
+}
