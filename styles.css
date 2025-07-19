@@ -731,10 +731,25 @@ p {
 }
 
 .upload {
-  display: block;
-  margin-bottom: 15px;
-  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   cursor: pointer;
+  position: relative;
+  font-weight: 500;
+  color: #333;
+}
+
+.upload .icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.upload input[type="file"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .upload input {
@@ -792,10 +807,19 @@ p {
 }
 
 .data-section a {
-  color: #00796B;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   text-decoration: none;
-  font-weight: 500;
+  color: #333;
 }
+
+.data-section .icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
 
 .image-gallery {
   display: flex;
